@@ -28,18 +28,21 @@ body{
 }
 .btn-primary{
     background-color: #a8d741 !important;
-    border-color: #000000 !important;
-    color: #000000 !important;
+    border-color: #000000!important;
+    color: #000000!important;
+    transition: transform 0.4s;
 
 }
 .btn-primary:hover{
-    transform: rotate(4deg);
-    background-color: #ffffff;
+    transform: rotate(4deg) scale(1.05);
+    background-color: #ffffff !important;
+
 }
 .mbr-section-btn a.btn:not(.btn-form) {
     border-radius: 100px;
-    font-weight: 400;
+    font-weight: 500;
     padding:  0.6rem 1.8rem;
+    font-size: 18px;
 
 }
 .btn-primary{
@@ -72,11 +75,17 @@ padding: 40px 40px;
     font-size: 80px;
 }
 .btn-black{
-    background-color: #232323;
-    border-color: #ffffff;
-    color: #ffffff;
+    background-color: #232323 !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     padding: 8px 35px;
+    transition: transform 0.4s;
+    &:hover{
+transform: rotate(4deg) scale(1.05);
+background-color: #f9f9f9!important;
+color: #000000!important;
+    }
 }
 .mbr-text2{
     text-decoration: underline;
@@ -155,7 +164,7 @@ padding-top:100px;
     min-height: 800px;
     transition: transform 0.4s;
     &:hover{
-        transform: rotate(-2deg) scale(1.02);
+        transform: rotate(-2deg) scale(1.05);
     }
 }
 .item-img{
@@ -175,13 +184,20 @@ padding-top:100px;
     justify-content: space-between;
     display: flex;
 }
-.btn-dark{
-    padding: 30px;
-    background-color: #a8d741;
+.btn-outline-dark{
+    transition: transform 0.4s;
+    
+    &:hover{
+        transform: rotate(4deg) scale(1.05);
+        background-color: $green!important;
+        color: #000000!important;
+    }
 }
 .mbr-title-btn a.btn:not(.btn-form) {
     border-radius: 100px;
     padding: 8px 15px;
+    font-size: 18px;
+    font-weight: 600;
 }
 .mb-4{
     font-size: 18px;
@@ -236,7 +252,7 @@ padding-top:100px;
     transition: transform 0.3s;
 }
 .item-card3:hover{
-    transform: rotate(-2deg);
+    transform: rotate(-2deg) scale(1.02);
 }
 .item-content{
     padding: 30px;
@@ -277,7 +293,7 @@ padding-top:100px;
 // shop section
 .shop-section{
     background-color: $light-gray;
-    padding: 90px 0px;
+    padding: 90px 0px 0px 30px;
 }
 .mbr-shop-subtitle{
     font-size: 35px;
@@ -288,4 +304,48 @@ padding-top:100px;
     font-size: 20px;
     text-align: center;
    color: #696969;
+}
+// big card img section
+.big-card-img{
+    padding: 90px 0px;
+    background-color: $light-gray;
+}
+.card-2{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 30px;
+
+}
+.card-wrapper1 {
+    border-radius: 2rem;
+    background-color:#eeeeee;
+    transition: all 0.3s;
+    &:hover{
+        transform: rotate(-3deg) scale(1);
+    }
+}
+.image-wrapper{
+    img{
+        max-width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+}
+.card-box1{
+    padding-left:2rem;
+    padding-right: 4rem;
+}
+.card-title-p{
+    font-size: 29px;
+    font-weight: 400;
+}
+.text-para{
+    font-size: 20px;
+    color:#696969;
+    line-height: 1.5;
+}
+.price{
+    font-weight: 500;
+    font-size: 70px;
 }
