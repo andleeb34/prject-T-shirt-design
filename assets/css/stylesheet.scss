@@ -1,5 +1,6 @@
 $green:#a8d741;
 $light-gray:#f9f9f9;
+$para-color:#a6a6a6;
 body{
     margin:0;
     padding: 0;
@@ -31,18 +32,17 @@ body{
     border-color: #000000!important;
     color: #000000!important;
     transition: transform 0.4s;
-
-}
-.btn-primary:hover{
-    transform: rotate(4deg) scale(1.05);
+&:hover{
+    transform: rotate(4deg) scale(1.08);
     background-color: #ffffff !important;
-
+}
 }
 .mbr-section-btn a.btn:not(.btn-form) {
     border-radius: 100px;
     font-weight: 500;
-    padding:  0.6rem 1.8rem;
+    padding:10px 15px;
     font-size: 18px;
+    border: 2.5px solid black;
 
 }
 .btn-primary{
@@ -188,7 +188,7 @@ padding-top:100px;
     transition: transform 0.4s;
     
     &:hover{
-        transform: rotate(4deg) scale(1.05);
+        transform: rotate(5deg) scale(1.08);
         background-color: $green!important;
         color: #000000!important;
     }
@@ -198,6 +198,7 @@ padding-top:100px;
     padding: 8px 15px;
     font-size: 18px;
     font-weight: 600;
+    border: 2.5px solid black;
 }
 .mb-4{
     font-size: 18px;
@@ -349,3 +350,227 @@ padding-top:100px;
     font-weight: 500;
     font-size: 70px;
 }
+// card container section
+.card-container{
+    background-color: $light-gray;
+    padding: 80px 0px;
+}
+
+.mbr-section-head{
+    h4{
+        font-size:40px;
+        font-weight: 400;
+    }
+    h5{
+        font-size: 20px;
+        color:$para-color;
+        font-weight: 400;
+    }
+}
+.row-big{
+    background-color: $green;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+.item-wrapper-card{
+    border-radius: 2rem;
+    transition: all 0.3s;
+    background: #eeeeee;
+    height: 100%;
+    flex-flow: column nowrap;
+    &:hover{
+        transform: rotate(-2deg) scale(1.04);
+    }
+}
+.card-img{
+    img{
+        width: 100%;
+    height: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    }
+}
+.item-content2{
+    padding: 30px;
+    h5{
+        font-size: 25px;
+    }
+    h6{
+        font-size: 20px;
+        font-weight: 500;
+        color:#454545;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 500;
+        color:#454545;
+        margin-top: 20px;
+    }
+}
+.big-imge-card{
+    background-color: $green;
+    padding: 80px 0px;
+}
+.align-center{
+    text-align: center;
+}
+.imge-heading{
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.big-imge{
+    position: relative;
+}
+
+.big-imge{
+    img{
+        width: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+    }
+}
+.icon-wrap{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 70px;
+    border-radius: 40px;
+}
+// icon-img section
+.icon-img{
+    padding: 70px 0px;
+    background-color: $light-gray;
+}
+.card-wrapper-3{
+    padding: 30px;
+    background-color: #eeeeee;
+    border-radius: 30px;
+    transition: transform 0.4s;
+    &:hover{
+        transform: rotate(-2deg) scale(1.07);
+    }
+}
+.card.col-12{
+    background-color: transparent ;
+    border: none;
+}
+.img-card-3{
+    text-align: center;
+}
+.img-card-3{
+    img{
+        margin: auto;
+    width: 140px;
+    padding-bottom: 2rem;
+    
+    }
+}
+.card-box2{
+    h5{
+       font-size: 35px; 
+       font-weight: 400;
+       margin-bottom: 25px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 500;
+        color:#696969;
+        margin-bottom: 35px;
+    }
+}
+// end section
+// card-imge-1
+.card-imge-1{
+    padding: 90px 0px;
+    background-color: $light-gray;
+
+}
+.row-bg-imge{
+    background-color: #eeeeee;
+    border-radius: 30px;
+    padding: 60px;
+    align-items:center;
+    transition: transform 0.4s;
+    &:hover{
+        transform: rotate(-2deg) scale(1.05);
+    }
+}
+.text-imge{
+    p{
+        font-size:20px;
+        font-weight: 400;
+        color: #353535;
+    }
+    h2{
+        font-size:20px;
+    }
+    strong{
+        font-weight: 700;
+    }
+}
+.image-1{
+    img{
+        border-radius: 20px;
+        object-fit: cover;
+        max-width: 100%;
+    }
+}
+// end
+// icon-card-2
+.icon-card-2{
+    background-color: $light-gray;
+    padding: 70px 0px;
+}
+.mbr-icon-head{
+    h3{
+        font-size: 65px;
+        font-weight: 400;
+        text-align: center;
+    }
+    h4{
+        font-size: 20px;
+        text-align: center;
+        color:#696969;
+    }
+}
+.card-icon{
+    border-radius: 2rem;
+    transition: all 0.3s;
+    padding: 3rem;
+    background: #eeeeee;
+    &:hover{
+        transform: rotate(-2deg) scale(1.05);
+    }
+}
+.image-icon{
+    img{
+        width:110px;
+        margin-bottom: 30px;
+    }
+}
+.card-box3{
+    h4{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    p{
+        color: #696969;
+        font-size: 18px;
+    }
+    h5{
+        color: #454545;
+        font-size: 20px;
+        font-weight: 400;
+        transition: 0.4s;
+    
+        &:hover{
+text-decoration: underline;
+        }
+    }
+    }
+
+
