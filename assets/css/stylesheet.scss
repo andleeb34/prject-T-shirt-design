@@ -1,6 +1,15 @@
 $green:#a8d741;
 $light-gray:#f9f9f9;
 $para-color:#a6a6a6;
+$creeme:#eeeeee;
+$dark-gray:#696969;
+$gray:#454545;
+$white:#ffffff;
+$black:#000000;
+$light-black:#696969;
+$shadow-btn:0 27px 30px -20px #000000 !important;
+$shadow-card:(0 50px 50px -25px rgba(0, 0, 0, 0.3));
+
 body{
     margin:0;
     padding: 0;
@@ -10,31 +19,34 @@ body{
 }
 .main{
     .fa-brands{
-    color:black;
+    color:$black;
     font-size: 24px;
     padding: 8px;
-    
 }
 }
 .navbar-collapse {
     justify-content: flex-end;
 }
-.navbar-nav li{
+.navbar-nav {
+    li{
     padding: 8px 20px;
     font-size: 20px;
     font-weight: 500;
 }
+}
 .navbar-brand{
     font-weight: 700;
+    font-size: 30px;
 }
 .btn-primary{
-    background-color: #a8d741 !important;
-    border-color: #000000!important;
-    color: #000000!important;
+    background-color:$green !important;
+    border-color:$black!important;
+    color:$black!important;
     transition: transform 0.4s;
 &:hover{
     transform: rotate(4deg) scale(1.08);
-    background-color: #ffffff !important;
+    background-color:$white !important;
+    box-shadow: 0 27px 30px -20px #000000 !important;
 }
 }
 .mbr-section-btn a.btn:not(.btn-form) {
@@ -42,21 +54,18 @@ body{
     font-weight: 500;
     padding:10px 15px;
     font-size: 18px;
-    border: 2.5px solid black;
-
+    border: 2.5px solid $black;
 }
 .btn-primary{
     img{
         width:25px;
-        background-color: #000000;
+        background-color:$black;
         color: $green;
         border-radius: 100%;
         font-size: 25px;
         margin-left: 5px;
     }
 }
-
-
 .header{
     background-color: $light-gray;
 }
@@ -70,21 +79,22 @@ padding: 40px 40px;
     padding: 128px 48px;
 }
 .mbr-text{
-    color:#000000;
+    color:$black;
     font-weight: 400;
     font-size: 80px;
 }
 .btn-black{
     background-color: #232323 !important;
-    border-color: #ffffff !important;
-    color: #ffffff !important;
+    border-color:$white!important;
+    color:$white !important;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     padding: 8px 35px;
     transition: transform 0.4s;
     &:hover{
 transform: rotate(4deg) scale(1.05);
-background-color: #f9f9f9!important;
-color: #000000!important;
+background-color: $light-gray!important;
+color:$black!important;
+box-shadow: $shadow-btn;
     }
 }
 .mbr-text2{
@@ -92,12 +102,12 @@ color: #000000!important;
     font-size: 20px;
 }
 .mbr-text3{
-    color: #000000;
+    color:$black;
     font-size: 18px;
 }
 .btn-black:hover{
-    background-color: #ffffff;
-    color: #000000;
+    background-color:$white;
+    color: $black;
 }
 .icon-card{
     background-color: $light-gray;
@@ -108,9 +118,8 @@ color: #000000!important;
 padding-top:100px;
 }
 .mbr-text4{
-    border-top: 1px solid #a6a6a6;
+    border-top: 1px solid $para-color;
     padding: 30px 0px;
-
 }
 .card-1{
     background-color: transparent;
@@ -126,7 +135,6 @@ padding-top:100px;
     img{
         width: 80px;
         padding-right: 20px;
-    
 }
 }
 .card-title{
@@ -134,7 +142,7 @@ padding-top:100px;
     line-height: 1.5;
 }
 .card-text{
-    color: #a6a6a6;
+    color:$para-color;
     font-size: 18px;
 }
 .big-card2{
@@ -144,7 +152,7 @@ padding-top:100px;
 }
 
 .row-card{
-    background-color: #000000;
+    background-color:$black;
     padding: 40px 20px;
     margin: 0;
     border-radius: 35px;
@@ -153,7 +161,7 @@ padding-top:100px;
     padding: 10px 16px 16px 20px;
 }
 .mbr-section-title{
-    color: #f9f9f9;
+    color:$light-gray;
     font-size: 35px;
     font-weight: 400;
 }
@@ -165,6 +173,7 @@ padding-top:100px;
     transition: transform 0.4s;
     &:hover{
         transform: rotate(-2deg) scale(1.05);
+        box-shadow: $shadow-card;
     }
 }
 .item-img{
@@ -178,7 +187,6 @@ padding-top:100px;
 .item-title{
     font-weight:400;
     font-size: 60px;
-    
 }
 .mbr-title-btn {
     justify-content: space-between;
@@ -190,7 +198,8 @@ padding-top:100px;
     &:hover{
         transform: rotate(5deg) scale(1.08);
         background-color: $green!important;
-        color: #000000!important;
+        color: $black!important;
+        box-shadow: $shadow-btn;
     }
 }
 .mbr-title-btn a.btn:not(.btn-form) {
@@ -198,19 +207,17 @@ padding-top:100px;
     padding: 8px 15px;
     font-size: 18px;
     font-weight: 600;
-    border: 2.5px solid black;
+    border: 2.5px solid $black;
 }
 .mb-4{
     font-size: 18px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $black;
     padding-bottom: 20px;
 }
 .mbr-text6{
     font-size: 2.1rem;
     line-height: 1.2;
-    
 }
-
 // /section paragraph
 .paragraph{
     background-color: $light-gray;
@@ -228,7 +235,7 @@ padding-top:100px;
     font-size: 20px;
     border-left: 1px solid currentColor;
     padding-left: 1rem;
-    color: #696969;
+    color: $light-black;
 }
 .big-card-3{
     background-color: $light-gray;
@@ -240,20 +247,20 @@ padding-top:100px;
     padding: 30px 15px;
 }
 .mbr-card-title{
-    color:#000000;
+    color:$black;
     font-size: 35px;
     font-weight: 4
-    
 }
 .item-card3{
-    background: #eeeeee;
+    background:$creeme;
     border-radius: 25px;
     display: flex;
     flex-flow: column nowrap;
     transition: transform 0.3s;
 }
 .item-card3:hover{
-    transform: rotate(-2deg) scale(1.02);
+    transform: rotate(-2deg) scale(1.03);
+    box-shadow: $shadow-card;
 }
 .item-content{
     padding: 30px;
@@ -304,7 +311,7 @@ padding-top:100px;
 .mbr-text8{
     font-size: 20px;
     text-align: center;
-   color: #696969;
+   color:$light-black;
 }
 // big card img section
 .big-card-img{
@@ -319,10 +326,11 @@ padding-top:100px;
 }
 .card-wrapper1 {
     border-radius: 2rem;
-    background-color:#eeeeee;
+    background-color:$creeme;
     transition: all 0.3s;
     &:hover{
         transform: rotate(-3deg) scale(1);
+        box-shadow: $shadow-card;
     }
 }
 .image-wrapper{
@@ -343,7 +351,7 @@ padding-top:100px;
 }
 .text-para{
     font-size: 20px;
-    color:#696969;
+    color:$dark-gray;
     line-height: 1.5;
 }
 .price{
@@ -375,11 +383,12 @@ padding-top:100px;
 .item-wrapper-card{
     border-radius: 2rem;
     transition: all 0.3s;
-    background: #eeeeee;
+    background: $creeme;
     height: 100%;
     flex-flow: column nowrap;
     &:hover{
         transform: rotate(-2deg) scale(1.04);
+        box-shadow: $shadow-card;
     }
 }
 .card-img{
@@ -400,12 +409,12 @@ padding-top:100px;
     h6{
         font-size: 20px;
         font-weight: 500;
-        color:#454545;
+        color:$gray;
     }
     p{
         font-size: 18px;
         font-weight: 500;
-        color:#454545;
+        color:$gray;
         margin-top: 20px;
     }
 }
@@ -418,13 +427,12 @@ padding-top:100px;
 }
 .imge-heading{
     font-size: 70px;
-    color: #ffffff;
+    color: $white;
     font-weight: 400;
 }
 .big-imge{
     position: relative;
 }
-
 .big-imge{
     img{
         width: 100%;
@@ -447,11 +455,12 @@ padding-top:100px;
 }
 .card-wrapper-3{
     padding: 30px;
-    background-color: #eeeeee;
+    background-color:$creeme;
     border-radius: 30px;
     transition: transform 0.4s;
     &:hover{
         transform: rotate(-2deg) scale(1.07);
+        box-shadow: $shadow-card;
     }
 }
 .card.col-12{
@@ -478,7 +487,7 @@ padding-top:100px;
     p{
         font-size: 18px;
         font-weight: 500;
-        color:#696969;
+        color:$dark-gray;
         margin-bottom: 35px;
     }
 }
@@ -487,16 +496,16 @@ padding-top:100px;
 .card-imge-1{
     padding: 90px 0px;
     background-color: $light-gray;
-
 }
 .row-bg-imge{
-    background-color: #eeeeee;
+    background-color:$creeme;
     border-radius: 30px;
     padding: 60px;
     align-items:center;
     transition: transform 0.4s;
     &:hover{
-        transform: rotate(-2deg) scale(1.05);
+        transform: rotate(-2deg) scale(1.03);
+        box-shadow: $shadow-card;
     }
 }
 .text-imge{
@@ -534,16 +543,18 @@ padding-top:100px;
     h4{
         font-size: 20px;
         text-align: center;
-        color:#696969;
+        color:$dark-gray;
     }
 }
 .card-icon{
     border-radius: 2rem;
     transition: all 0.3s;
     padding: 3rem;
-    background: #eeeeee;
+    background:$creeme;
+
     &:hover{
-        transform: rotate(-2deg) scale(1.05);
+        transform: rotate(-2deg) scale(1.03);
+        box-shadow:$shadow-card
     }
 }
 .image-icon{
@@ -558,7 +569,7 @@ padding-top:100px;
         font-weight: 400;
     }
     p{
-        color: #696969;
+        color: $dark-gray;
         font-size: 18px;
     }
     h5{
@@ -566,11 +577,60 @@ padding-top:100px;
         font-size: 20px;
         font-weight: 400;
         transition: 0.4s;
-    
         &:hover{
 text-decoration: underline;
         }
     }
     }
-
-
+    // end
+    // form-section
+    .form-section{
+        background-color: $light-gray;
+        padding: 50px 0px;
+    }
+    .mbr-form-head{
+        text-align: center;
+        margin-bottom: 30px;
+        h3{
+            font-size:50px;
+            font-weight: 400;
+        }
+    }
+    .form-box{
+        background-color: $green;
+        padding:60px;
+        border-radius: 30px;
+    }
+    .dragarea{
+    input{
+        border-radius: 10px;
+        padding: 10px;
+        color:$para-color;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .text-form{
+        min-height: 180px;
+        border-radius: 10px;
+        color:$para-color;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    }
+    .google-map{
+        iframe{
+        width:100%;
+        min-height: 600px;
+    }
+}
+.footer{
+    background-color:$black;
+    padding: 20px;
+    p{
+        text-align: center;
+        color: $light-gray;
+        font-size: 20px;
+    }
+}
+    
+      

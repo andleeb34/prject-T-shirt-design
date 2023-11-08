@@ -8,7 +8,7 @@ body {
 }
 
 .main .fa-brands {
-  color: black;
+  color: #000000;
   font-size: 24px;
   padding: 8px;
 }
@@ -25,6 +25,7 @@ body {
 
 .navbar-brand {
   font-weight: 700;
+  font-size: 30px;
 }
 
 .btn-primary {
@@ -36,6 +37,7 @@ body {
 .btn-primary:hover {
   transform: rotate(4deg) scale(1.08);
   background-color: #ffffff !important;
+  box-shadow: 0 27px 30px -20px #000000 !important;
 }
 
 .mbr-section-btn a.btn:not(.btn-form) {
@@ -43,7 +45,7 @@ body {
   font-weight: 500;
   padding: 10px 15px;
   font-size: 18px;
-  border: 2.5px solid black;
+  border: 2.5px solid #000000;
 }
 
 .btn-primary img {
@@ -87,6 +89,7 @@ body {
   transform: rotate(4deg) scale(1.05);
   background-color: #f9f9f9 !important;
   color: #000000 !important;
+  box-shadow: 0 27px 30px -20px #000000 !important;
 }
 
 .mbr-text2 {
@@ -177,6 +180,7 @@ body {
 }
 .card.item-card:hover {
   transform: rotate(-2deg) scale(1.05);
+  box-shadow: 0 50px 50px -25px rgba(0, 0, 0, 0.3);
 }
 
 .item-img img {
@@ -204,6 +208,7 @@ body {
   transform: rotate(5deg) scale(1.08);
   background-color: #a8d741 !important;
   color: #000000 !important;
+  box-shadow: 0 27px 30px -20px #000000 !important;
 }
 
 .mbr-title-btn a.btn:not(.btn-form) {
@@ -211,12 +216,12 @@ body {
   padding: 8px 15px;
   font-size: 18px;
   font-weight: 600;
-  border: 2.5px solid black;
+  border: 2.5px solid #000000;
 }
 
 .mb-4 {
   font-size: 18px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
   padding-bottom: 20px;
 }
 
@@ -273,7 +278,8 @@ body {
 }
 
 .item-card3:hover {
-  transform: rotate(-2deg) scale(1.02);
+  transform: rotate(-2deg) scale(1.03);
+  box-shadow: 0 50px 50px -25px rgba(0, 0, 0, 0.3);
 }
 
 .item-content {
@@ -351,6 +357,7 @@ body {
 }
 .card-wrapper1:hover {
   transform: rotate(-3deg) scale(1);
+  box-shadow: 0 50px 50px -25px rgba(0, 0, 0, 0.3);
 }
 
 .image-wrapper img {
@@ -412,6 +419,7 @@ body {
 }
 .item-wrapper-card:hover {
   transform: rotate(-2deg) scale(1.04);
+  box-shadow: 0 50px 50px -25px rgba(0, 0, 0, 0.3);
 }
 
 .card-img img {
@@ -490,6 +498,7 @@ body {
 }
 .card-wrapper-3:hover {
   transform: rotate(-2deg) scale(1.07);
+  box-shadow: 0 50px 50px -25px rgba(0, 0, 0, 0.3);
 }
 
 .card.col-12 {
@@ -532,7 +541,8 @@ body {
   transition: transform 0.4s;
 }
 .row-bg-imge:hover {
-  transform: rotate(-2deg) scale(1.05);
+  transform: rotate(-2deg) scale(1.03);
+  box-shadow: 0 50px 50px -25px rgba(0, 0, 0, 0.3);
 }
 
 .text-imge p {
@@ -577,7 +587,8 @@ body {
   background: #eeeeee;
 }
 .card-icon:hover {
-  transform: rotate(-2deg) scale(1.05);
+  transform: rotate(-2deg) scale(1.03);
+  box-shadow: 0 50px 50px -25px rgba(0, 0, 0, 0.3);
 }
 
 .image-icon img {
@@ -601,4 +612,54 @@ body {
 }
 .card-box3 h5:hover {
   text-decoration: underline;
+}
+
+.form-section {
+  background-color: #f9f9f9;
+  padding: 50px 0px;
+}
+
+.mbr-form-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.mbr-form-head h3 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.form-box {
+  background-color: #a8d741;
+  padding: 60px;
+  border-radius: 30px;
+}
+
+.dragarea input {
+  border-radius: 10px;
+  padding: 10px;
+  color: #a6a6a6;
+  font-size: 20px;
+  font-weight: 400;
+}
+.dragarea .text-form {
+  min-height: 180px;
+  border-radius: 10px;
+  color: #a6a6a6;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.google-map iframe {
+  width: 100%;
+  min-height: 600px;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 20px;
+}
+.footer p {
+  text-align: center;
+  color: #f9f9f9;
+  font-size: 20px;
 }/*# sourceMappingURL=stylesheet.css.map */
